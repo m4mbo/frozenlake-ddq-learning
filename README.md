@@ -5,9 +5,9 @@ The main idea behind Q-learning is that if we had a function $Q^*: State \times 
 
 $\pi^* (s) = \arg\!\max_a \ Q^*(s, a)$
 
-But is not scalable. Must compute $Q(s,a)$ for every state-action pair. If state is e.g. current game state pixels, computationally infeasible to compute for entire state space! But, since neural networks are universal function approximators, we can simply create one and train it to resemble $Q^*$.
+But this not scalable, as we must compute $Q(s,a)$ for every state-action pair. If state is e.g. current game state pixels, it results computationally infeasible to compute for entire state space! But, since neural networks are universal function approximators, we can simply create one and train it to resemble $Q^*$.
 
-For our training update rule, we'll use a fact that every $Q$ function for some policy obeys the Bellman equation:
+For our training update rule, we'll use the fact that every $Q$ function for some policy obeys the Bellman equation:
 
 $Q^{\pi}(s, a) = r + \gamma Q^{\pi}(s', \pi(s'))$
 
