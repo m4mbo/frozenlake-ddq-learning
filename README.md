@@ -1,7 +1,7 @@
 # Double_Deep_Q-Learning_for_FrozenLake_Env
 This repository showcases the implementation of a Double Deep Q-Learnig algorithm for the FrozenLake environment from Open AI's gym library.
 
-The main idea behind Q-learning is that if we had a function $Q^*: State \times Action \rightarrow \mathbb{R}$, that could tell us what our return would be, if we were to take an action in a given state, then we could easily construct a policy that maximizes our rewards: $ \pi^* $ $ (s) = \arg\!\max_a \ Q^*(s, a) $
+The main idea behind Q-learning is that if we had a function $Q^*: State \times Action \rightarrow \mathbb{R} $, that could tell us what our return would be, if we were to take an action in a given state, then we could easily construct a policy that maximizes our rewards: $ \pi^* (s) = \arg\!\max_a \ Q^*(s, a) $
 
 But is not scalable. Must compute $Q(s,a)$ for every state-action pair. If state is e.g. current game state pixels, computationally infeasible to compute for entire state space! But, since neural networks are universal function approximators, we can simply create one and train it to resemble $Q^*$.
 
