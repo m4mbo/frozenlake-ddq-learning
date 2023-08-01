@@ -17,4 +17,14 @@ $\delta = Q(s, a) - (r + \gamma \max_a Q(s', a))$
 
 To minimise this error, we will use the `Huber loss <https://en.wikipedia.org/wiki/Huber_loss>`__. The Huber loss acts like the mean squared error when the error is small, but like the mean absolute error when the error is large - this makes it more robust to outliers when the estimates of $Q$ are very noisy. We calculate this over a batch of transitions, $B$, sampled from the replaymemory.
 
+# Double Deep Q-Learning
+
+We will implement Double Deep Q-Learning here. Double Deep Q-Learning is used to reduce the maximaztion bias in Q-Learning. This entails using two separate $Q$-value estimators, each of which is used to update the other. The target values are calculated using a target Q-network. The target Q-network's parameters are updated to the current networks every $C$ time steps.
+
+![image](https://github.com/M4mbo/Double_Deep_Q-Learning_for_FrozenLake_Env/assets/115642529/a044aa38-dc09-45c4-96f1-7688e795b1a2)
+
+Frozen Lake:
+
+![descarga (1)](https://github.com/M4mbo/Double_Deep_Q-Learning_for_FrozenLake_Env/assets/115642529/1cca1f96-a6fd-4a88-a2d5-aded5ae8ba86)
+
 
