@@ -1,5 +1,7 @@
-# Double_Deep_Q-Learning_for_FrozenLake_Env
+# Double Deep Q-Learning for FrozenLake_Env
 This repository showcases the implementation of a Double Deep Q-Learnig algorithm for the FrozenLake environment from Open AI's gym library.
+
+# Q-Learning
 
 The main idea behind Q-learning is that if we had a function $Q^*: State \times Action \rightarrow \mathbb{R} $, that could tell us what our return would be, if we were to take an action in a given state, then we could easily construct a policy that maximizes our rewards: 
 
@@ -23,7 +25,7 @@ We will implement Double Deep Q-Learning here. Double Deep Q-Learning is used to
 
 ![image](https://github.com/M4mbo/Double_Deep_Q-Learning_for_FrozenLake_Env/assets/115642529/a044aa38-dc09-45c4-96f1-7688e795b1a2)
 
-Frozen Lake:
+# Results
 
 ![descarga (1)](https://github.com/M4mbo/Double_Deep_Q-Learning_for_FrozenLake_Env/assets/115642529/1cca1f96-a6fd-4a88-a2d5-aded5ae8ba86)
 
